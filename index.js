@@ -1,7 +1,7 @@
 const fetch = require('node-fetch');
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const scrt = 'NTkxODE2ODI1ODI2OTY3NTUy.XQ2TIw.4cRkm_OcSDKTs7vgjhhFAwXi_mQ';
+const scrt = process.env.token;
 
 let dogurl;
 
