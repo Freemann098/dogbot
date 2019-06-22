@@ -22,7 +22,7 @@ function handleData(data){
 }
 
 client.on('message', msg=>{
-    if(msg.content.includes("dog") && !msg.content.includes("http")){
+    if(msg.content.toLowerCase().includes("dog") && !msg.content.includes("http")){
         getRandomDog();
 
         msg.reply(dogurl);
